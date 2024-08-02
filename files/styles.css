@@ -1,0 +1,355 @@
+html {
+  background-color: white;
+}
+
+body {
+  font-family: "Courier New", monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #ae9880;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+/* align-items: center; */
+}
+#neckLink:hover {
+  color: white;
+  background-color: black;
+}
+
+.image-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 480px;
+}
+
+.arrow {
+  background-color:transparent;
+  border: none;
+  color: #ae9880;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.arrow:hover {
+  color: white;
+  background-color: #fbeee0;
+}
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+#slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#slider-bridal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1em;
+
+}
+
+
+
+header {
+  font-family: "Courier New", monospace;
+  background-color: #fbeee0;
+  background-size: cover;
+  background-position: center;
+  color: #ae9880;
+  text-align: center;
+
+}
+
+
+header nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #b09b84;
+  text-decoration: none;
+  font-family: "Courier New", monospace;
+  font-size: 15pt;
+  font-weight: bold;
+  padding: 2px;
+}
+
+#products {
+  padding: 20px 0;
+}
+
+h2 {
+  font-family: "Courier New", monospace;
+  margin-left: 10px;
+}
+
+.product,
+.category .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+
+  width: 400px;
+  margin: 20px;
+}
+
+#three {
+  height: 40px;
+}
+
+.product img,
+.category .product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.product h3,
+.product h4 {
+  margin-top: 10px;
+}
+
+.product .price {
+  font-weight: bold;
+}
+
+.category {
+  margin-top: 10px;
+}
+
+.add-to-cart-button {
+  color: #ae9880;
+  background-color: white;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: #ae9880 0.5px solid;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+.add-to-cart-button:hover {
+  color: white;
+  background-color: #ae9880;
+}
+
+.category h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category .product-list {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#content-section {
+  padding: 20px 0;
+  margin-left: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+#content-section-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#content-section li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #fbeee0;
+  color: #ae9880;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+
+}
+
+.subscribe-button {
+  background-color: #ae9880;
+  color: white;
+
+  padding: 10px 20px;
+  /* Add some padding */
+  text-align: center;
+  /* Center the text */
+  text-decoration: none;
+  /* Remove underline */
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /* Add a pointer cursor on hover */
+  border-radius: 4px;
+  /* Rounded corners */
+}
+
+
+.subscribe-button:hover {
+  background-color: white;
+  color: #ae9880;
+}
+
+.email-input {
+  background-color: #fbf9f6;
+  color: #897866;
+  border: none;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.email-input::placeholder {
+  color: #ae9880;
+  opacity: 0.7;
+}
+
+
+.email-input:focus {
+  outline: none;
+  background-color: #e8dfc7;
+}
+
+.innerFooter {
+  display: flex;
+  justify-content: space-around;
+
+  #f {
+    text-align: left;
+
+
+  }
+
+  #f2 {
+    text-align: left;
+
+    ul {
+      padding: 0px;
+
+      li {
+
+        list-style-type: none;
+      }
+    }
+  }
+
+  #f3 {
+    text-align: left;
+  }
+}
+.contact-div{
+  display: flex;
+}
+.contact-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 30px;
+}
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.map-container iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ae9880;;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group button:hover {
+  background-color: #ae9880;
+}
